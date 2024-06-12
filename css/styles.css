@@ -4,10 +4,12 @@
     box-sizing: border-box;
 }
 
+html {
+    font-size: 16px;
+}
+
 html, body {
     height: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 body {
@@ -17,7 +19,6 @@ body {
     background-color: #000;
     color: #fff;
     font-family: 'Inter', sans-serif;
-    font-size: 1rem;
 }
 
 nav {
@@ -71,12 +72,9 @@ nav {
 .i-like-text {
     margin-top: 20px;
 }
-.i-like-text strong {
-    font-size: 1.2rem;
-}
 
 .i-like-item:nth-child(1) {
-    padding-top: 0px;
+    padding-top: 2px;
 }
 
 .i-like-item:nth-last-child(1) {
@@ -85,7 +83,6 @@ nav {
 
 .i-like-item {
     border-bottom: 2px solid #fff;
-    font-size: 1.1rem;
     padding: 4px 0 4px 0;
 }
 
@@ -98,14 +95,21 @@ nav {
     list-style-type: none;
 }
 
-.main-content p {
-    font-size: 1.2rem;
-    margin-bottom: 10px;
+.main-container p {
+    padding: 2px 0 2px 0;
 }
 
 main {
     flex: 1;
     text-align: center;
+}
+
+h1 {
+    font-size: 2.986rem;
+}
+
+p {
+    font-size: 1rem;
 }
 
 footer {
@@ -114,11 +118,16 @@ footer {
 }
 
 footer p {
-    font-size: 1rem;
     text-align: center;
 }
 
 /* Media Queries */
+@media (max-width: 900px) {
+    .main-container {
+        padding: 0 1rem 0 1rem;
+    }
+}
+
 @media (max-width: 768px) {
     .nav-menu {
         flex-direction: column;
@@ -131,53 +140,8 @@ footer p {
 }
 
 @media (max-width: 480px) {
-    .welcome-text-home,
-    .welcome-text-projects {
-        font-size: 1.5rem;
-    }
-
     .profile-pic {
         width: 80%;
         margin: 20px 0;
-    }
-
-    .footer p {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 400px) {
-    .i-like-text strong {
-        font-size: 1rem;
-    }
-
-    .i-like-item {
-        font-size: 0.9rem;
-    }
-
-    .main-content p {
-        font-size: 1rem;
-    }
-
-    .welcome-text-projects {
-        font-size: 1.4rem;
-    }
-}
-
-@media (max-width: 360px) {
-    .i-like-text strong {
-        font-size: 0.9rem;
-    }
-
-    .i-like-item {
-        font-size: 0.8rem;
-    }
-
-    .main-content p {
-        font-size: 0.9rem;
-    }
-
-    .welcome-text-projects {
-        font-size: 1.3rem;
     }
 }
