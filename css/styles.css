@@ -96,10 +96,6 @@ nav {
     list-style-type: none;
 }
 
-.main-container p {
-    padding: 2px 0 2px 0;
-}
-
 main {
     flex: 1;
     text-align: center;
