@@ -74,7 +74,7 @@ nav {
 }
 
 .i-like-item:nth-child(1) {
-    padding-top: 2px;
+    padding-top: 4px;
 }
 
 .i-like-item:nth-last-child(1) {
@@ -83,7 +83,7 @@ nav {
 
 .i-like-item {
     border-bottom: 2px solid #fff;
-    padding: 4px 0 4px 0;
+    padding: 2px 0 2px 0;
 }
 
 .i-like-menu {
