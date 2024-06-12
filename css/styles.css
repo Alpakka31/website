@@ -138,6 +138,10 @@ footer p {
     margin-top: 40px;
 }
 
+.flex-item:nth-last-child(1) {
+    margin-bottom: 40px;
+}
+
 .flex-item {
     background-color: #222;
     max-width: 560px;
